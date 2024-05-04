@@ -10,17 +10,17 @@ import './mobile.css';
 
 function App() {
     useEffect(() => {
-        // Check if the device width is less than or equal to a certain value (e.g., 768px for mobile devices)
+        
         if (window.innerWidth <= 768) {
             import('./mobile.css')
                 .then((module) => {
-                    // Styles loaded successfully
+                   
                 })
                 .catch((error) => {
                     console.error('Error loading mobile.css:', error);
                 });
         }
-    }, []); // Run this effect only once on component mount
+    }, []); 
 
     return (
         <div className="App">
